@@ -21,7 +21,7 @@ if(LINK_FAISS)
 endif()
 
 target_compile_options(linear-scans PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:
-                        -arch=sm_89;
+                        -arch=sm_80; -allow-unsupported-compiler;
                         -std=c++20;
                         -Xptxas="-v";
                        >)

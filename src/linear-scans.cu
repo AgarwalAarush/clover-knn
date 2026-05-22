@@ -474,7 +474,7 @@ void execute_knn_meshes(int argc, char **argv)
             constexpr std::size_t reps = 1;
 
             //std::vector< int > k_values{32,64,128};
-            std::vector< int > k_values{128};
+            std::vector< int > k_values{40};
 
             std::string directory_path ="../meshes";
 
@@ -532,7 +532,7 @@ void execute_knn(int argc, char **argv)
         {
             constexpr std::size_t reps = 2;
 
-            std::vector< int > k_values{30};//, 100, 200, 500};
+            std::vector< int > k_values{40};//, 100, 200, 500};
 
             using real = float;
             //constexpr std::size_t n = 100'000;
@@ -582,23 +582,23 @@ int main( int argc, char **argv )
     /*
     Running on Uniform distributions.
     */
-    execute_knn<float, 1000, 3>(argc, argv);
-    execute_knn<float, 2000, 3>(argc, argv);
-    execute_knn<float, 5000, 3>(argc, argv);
-    execute_knn<float, 10000, 3>(argc, argv);
-    execute_knn<float, 20000, 3>(argc, argv);
-    execute_knn<float, 50000, 3>(argc, argv);
-    execute_knn<float, 80000, 3>(argc, argv);
-    execute_knn<float, 100000, 3>(argc, argv);
-    execute_knn<float, 150000, 3>(argc, argv);
-    execute_knn<float, 200000, 3>(argc, argv);
-    execute_knn<float, 350000, 3>(argc, argv);
-    execute_knn<float, 500000, 3>(argc, argv);
-    execute_knn<float, 600000, 3>(argc, argv);
-    execute_knn<float, 700000, 3>(argc, argv);
-    execute_knn<float, 800000, 3>(argc, argv);
-    execute_knn<float, 900000, 3>(argc, argv);
-    execute_knn<float, 1000000, 3>(argc, argv);
+    //execute_knn<float, 1000, 3>(argc, argv);
+    //execute_knn<float, 2000, 3>(argc, argv);
+    //execute_knn<float, 5000, 3>(argc, argv);
+    //execute_knn<float, 10000, 3>(argc, argv);
+    //execute_knn<float, 20000, 3>(argc, argv);
+    //execute_knn<float, 50000, 3>(argc, argv);
+    //execute_knn<float, 80000, 3>(argc, argv);
+    //execute_knn<float, 100000, 3>(argc, argv);
+    //execute_knn<float, 150000, 3>(argc, argv);
+    //execute_knn<float, 200000, 3>(argc, argv);
+    //execute_knn<float, 350000, 3>(argc, argv);
+    //execute_knn<float, 500000, 3>(argc, argv);
+    //execute_knn<float, 600000, 3>(argc, argv);
+    //execute_knn<float, 700000, 3>(argc, argv);
+    //execute_knn<float, 800000, 3>(argc, argv);
+    //execute_knn<float, 900000, 3>(argc, argv);
+    //execute_knn<float, 1000000, 3>(argc, argv);
     /*
     Running on input meshes. The input dir should be put in line 479.
     */
